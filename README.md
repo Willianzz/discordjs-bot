@@ -1,2 +1,2 @@
 # discordjs-bot
- Um bot para discord utilizandoa a biblioteca Discordjs.
+ Um bot para discord utilizando a biblioteca Discordjs.
