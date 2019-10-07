@@ -95,22 +95,49 @@ exports.eventsLaucher = (client) => {
      */
     client.on('guildMemberAvailable', member => console.log('guildMemberAvailable'));
 
+    /**
+     *  - Evento emitido sempre que um membro é removido do servidor.
+     */
     client.on('guildMemberRemove', guild => console.log('guildMemberRemove'));
 
+    /**
+     * - Evento emitido sempre que um grupo de membros é recebido no servidor.
+     */
     client.on('guildMembersChunk', (members, guild) => console.log('guildMembersChunk'));
 
+    /**
+     * - Evento emitido quando um membro do servidor começa / para de falar.
+     */
     client.on('guildMemberSpeaking', (member, speaking) => console.log('guildMemberSpeaking'));
 
+    /**
+     * - Evento emitido sempre que as informações do membro dentro do servidor mudam.
+     */
     client.on('guildMemberUpdate', (oldMember, newMember) => console.log('guildMemberUpdate'));
 
+    /**
+     * - Evento emitido sempre que um servidor fica disponivel.
+     */
     client.on('guildUnavailable', guild => console.log('guildUnavailable'));
 
+    /**
+     * Evento emitido sempre que as informações do servidor são atualizadas.
+     */
     client.on('guildUpdate', (oldGuild, newGuild) => console.log('guildUpdate'));
 
+    /**
+     * - Evento emitido sempre que uma integração do servidor é atualizada.
+     */
     client.on('guildIntegrationsUpdate', guild => console.log('guildIntegrationsUpdate'));
 
+    /**
+     * - Evento emitido sempre que uma nova mensagem é enviada no servidor.
+     */
     client.on('message', message => console.log('message'));
 
+    /**
+     * - Evento emitido sempre que uma mesagem é deletada do servidor.
+     */
     client.on('messageDelete', message => console.log('messageDelete'));
 
     client.on('messageDeleteBulk', messages => console.log('messageDeleteBulk'));
